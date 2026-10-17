@@ -1,0 +1,21 @@
+[project]
+name = "chatterbox-tts-indonesia"
+version = "0.1.0"
+description = "Chatterbox TTS Indonesian CLI tool"
+readme = "README.md"
+authors = [
+    { name = "Aria Saputra", email = "saputra13427@gmail.com" }
+]
+requires-python = ">=3.12,<=3.15"
+dependencies = [
+    "chatterbox-tts==0.1.7",
+    "ml-dtypes<0.6.0",
+    "setuptools<81",
+]
+
+[project.scripts]
+chatterbox-id = "chatterbox_tts_indonesia:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<=0.15.0"]
+build-backend = "uv_build"
